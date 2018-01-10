@@ -37,5 +37,7 @@ namespace SwissTransport
     {
         [JsonProperty("stations")]
         public List<Station> StationList { get; set; }
+        IList<string> l = new List<string>{ "Afghanistan", "Nord-Korea", "Sudan", "Somalia", "Sierra Leone", "Frankreich", "Equatorial Guinea" };
+
     }
 }

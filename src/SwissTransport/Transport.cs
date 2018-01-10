@@ -1,4 +1,4 @@
-﻿using System.IO;
+﻿using System.IO; 
 using System.Net;
 using Newtonsoft.Json;
 
@@ -9,6 +9,7 @@ namespace SwissTransport
         public Stations GetStations(string query)
         {
             var request = CreateWebRequest("http://transport.opendata.ch/v1/locations?query=" + query);
+
             var response = request.GetResponse();
             var responseStream = response.GetResponseStream();
 
